@@ -1,0 +1,54 @@
+body
+{
+	background-image: url(http://sv1.upsieutoc.com/2018/02/23/circles-light.png);
+	margin: 50px auto;
+	padding: 0px;
+	font-size: 15px;
+	font-family: 'tahoma',sans-serif;
+	box-sizing: content-box;
+	max-width: 1000px;
+	max-height: 500px;
+}
+h1
+{
+	text-align: center;
+}
+img
+{
+	margin: 10px 10px 10px 10px ;
+}
+img:hover
+{
+	background: #eee;
+	box-shadow: 10px 10px 10px #666;
+	-moz-box-shadow: 10px 10px 10px #666;
+	-webkit-box-shadow: 10px 10px 10px #666;
+	margin-right: 5px;
+	padding: 10px;
+}
+#imageGalley > li
+{
+	display: inline;
+}
+
+
+#overlay
+{
+	background: rgba(0,0,0,0,7);
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	top: -200px;
+	left: 450px;
+	display: none;
+	text-align: center;
+}
+#overlay img
+{
+	margin-top: 20%;
+}
+#overlay p
+{
+	color: black;
+	font-size: 30px;
+}

@@ -1,0 +1,73 @@
+_____________________________________________________________
+traversing 
+cải thiện tốc độ trang web và có liên quan đến hướng đối tượng
+
+
+____________________________________________________________
+Element và JQuery 
+
+hai thằng này tuy là khác nhau nhưng không thể thay thế cho nhau hoàn toàn được
+
+
+
+
+
+
+
+
+
+
+________________________________________________________
+cách tối ưu bằng Traversing
+
+traversing:   là cách viết CODE tối ưu mã nguồn dễ bảo trì và tốc độ thực thi nhanh nhờ vào hàm thư viện có sẵn của Jquery
+
+
+
+
+
+
+----tìm toàn bộ thẻ li trong class olist
+$(".olist").children("li")
+
+
+----tìm thẻ cha
+$(".olist").parent();
+
+
+----di chuyển tiến để tìm Element
+$("p").next();   (.next().next() : để đi tiếp 2 bước)
+
+
+----di chuyển lùi để tìm Element
+$("p").prev();  (.prev().prev()  : lùi đi 2 bước)
+
+
+----tìm toàn bộ thẻ li có class là Olist
+
+$("Olist").find("li"); 
+
+
+
+
+______________________________________________________________
+OverLay hình ảnh đè lên các hình nhỏ cảm giác đang bóc đến trang web khác (hoặc có thể là form đè lên các thành phần khác)
+
+Cấu tạo overlay
+-1 cần chứa hình
+-2 chứa các text
+
+bao nó vào trong thẻ <div>
+
+______________________________________________________________
+các bước để overlay hoạt động
+Nạp ảnh vào overlay  ----> Nạp text vào ----> hiển thị overlay
+
+.attr("value") lấy giá trị trong Attribute đó hoặc nhật giá trị cho thuộc tính 
+VD muốn lấy href
+
+ <a href="abc.com">   .attr("href")
+
+$(this)   tham chiếu đến đối tượng user được click nó đó vai trò như một con trỏ 
+
+chỉ có thể hoạt động khi user click vào 1 thằng có chủ đích thay thể như nút botton
